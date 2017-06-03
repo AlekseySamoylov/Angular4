@@ -1,2 +1,10 @@
-<h2>The server component</h2>
-<h2>variable</h2>
+<p
+  [ngClass]="{
+    'online-server' : isServerOnline,
+    'offline-server' : !isServerOnline }">
+  The server with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
+<p [ngStyle]="{backgroundColor : getColor() }">
+  The server with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
+
